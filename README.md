@@ -1,7 +1,9 @@
-💧 Smart Water Leakage Detection System
+## 💧 Smart Water Leakage Detection System
+
 This Arduino-based project is a Smart Water Leakage Detection System that identifies water leakage in real-time and provides timing details and severity indication using LEDs.
 
 🚀 Features
+
 Real-time water leakage detection using an analog water sensor.
 
 Measures how long the leak has been active using microsecond-level precision.
@@ -19,6 +21,7 @@ r → Reset system state
 t → Show current threshold
 
 🧰 Components Used
+
 Arduino Uno
 
 Water Sensor (analog, connected to A0)
@@ -32,6 +35,7 @@ Red and Yellow LEDs (Pins 13 and 12)
 Serial Monitor for interaction and debugging
 
 ⚙️ How It Works
+
 The system continuously powers and reads from the analog water sensor.
 
 If the sensor value falls below a defined threshold, it marks the start of a leakage.
@@ -47,6 +51,7 @@ LED indicators:
 When no leak is detected, both LEDs remain OFF.
 
 📟 Command Interface
+
 Open the Serial Monitor (9600 baud) and use:
 
 r → Resets the flags and leak duration timer.
@@ -54,5 +59,6 @@ r → Resets the flags and leak duration timer.
 t → Displays the current analog threshold value.
 
 🧪 Threshold Tuning
+
 Default threshold is set to 1000. Adjust this in the code if your sensor needs calibration.
 
